@@ -20,12 +20,12 @@ class SpecialNoteApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'SpecialNoteApp',
+      title: 'SpecialNotesApp',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(title: 'SpecialNoteApp'),
+      home: const HomePage(title: 'SpecialNotesApp'),
     );
   }
 }
