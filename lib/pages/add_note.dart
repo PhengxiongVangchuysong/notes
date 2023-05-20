@@ -113,9 +113,11 @@ class _AddNoteState extends State<AddNote> {
                               padding: const EdgeInsets.all(15.0),
                               child: Column(
                                 children: [
-                                  dateTime  != null? Text(
-                                      "Selected Day : ${dateTime.toString().split(" ")[0]}") :const Text(
-                                      "Selected Day : DD/MM/YYYY ") ,
+                                  dateTime != null
+                                      ? Text(
+                                          "Selected Day : ${dateTime.toString().split(" ")[0]}")
+                                      : const Text(
+                                          "Selected Day : DD/MM/YYYY "),
                                 ],
                               ),
                             ),
@@ -229,6 +231,7 @@ class _AddNoteState extends State<AddNote> {
                     check = false;
                     dateTime = null;
                     timeOfDay = null;
+                    Navigator.pop(context);
                     Fluttertoast.showToast(msg: "added!");
                   },
                   child: Text(
